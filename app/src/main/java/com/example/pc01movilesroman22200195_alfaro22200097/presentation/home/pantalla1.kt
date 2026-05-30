@@ -18,6 +18,7 @@ fun Pantalla1() {
     var tipoVuelo by remember { mutableStateOf("Nacional") }
     var resultado by remember { mutableStateOf("") }
 
+
     Column(
         modifier = Modifier
             .fillMaxSize()
