@@ -88,13 +88,10 @@ fun Pantalla1() {
                     else 32.0
 
                 if (pesoMaleta <= limite) {
-                    resultado =
-                        "Cumple el límite permitido.\nPeso permitido: $limite kg"
+                    resultado = "Cumple el límite permitido.\nPeso permitido: $limite kg"
                 } else {
                     val exceso = pesoMaleta - limite
-                    resultado =
-                        "Excede el límite permitido.\nKg excedidos: %.2f"
-                            .format(exceso)
+                    resultado = "Excede el límite permitido.\nKg excedidos: ${"%.2f".format(exceso)}"
                 }
             },
             modifier = Modifier.fillMaxWidth()
